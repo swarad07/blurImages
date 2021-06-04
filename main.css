@@ -1,0 +1,42 @@
+button {
+  height: 35px;
+  border-radius: 5px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+#status:not(:empty) {
+  background: green;
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+label {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label span {
+  padding-bottom: 1rem;
+}
+
+desc {
+  display: block;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+title {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+}

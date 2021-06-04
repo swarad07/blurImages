@@ -1,0 +1,24 @@
+{
+  "name": "Blur Images",
+  "version": "1.0",
+  "description": "For the time when you work involves NSFW images and your screen is visible to everyone!",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["main.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "options.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

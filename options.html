@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Blur Images Options:</title></head>
+<link rel="stylesheet" href="main.css">
+<body>
+
+<title>Blur Images!</title>
+<label>
+  <span>Master:</span><input type="checkbox" id="master">
+  <desc>Master switch, turn off this extension. This should be ON for the extension to work.</desc>
+</label>
+
+<label>
+  <span>Invert Colors:</span><input type="checkbox" id="invert">
+  <desc>When just blurring is not enough, invert will also use filters to invert the colors of the image, making the image virtually unrecognizable.</desc>
+</label>
+
+<label>
+  <span>Selectors:</span>
+  <textarea placeholder="Target specific images, enter selectors in comma separated format. ex: .avaatar,.product-image" id="selectors" name="selectors" rows="4" cols="50"></textarea>
+  <desc>Avoid blurring of all images, and target specific images on the web page. Leave this empty if you want to target all images.</desc>
+</label>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>
