@@ -22,8 +22,13 @@ function blurImages(master, invert, selectors) {
     } else {
       images = document.getElementsByTagName('img');
     }
-    for(var i = 0; i < images.length; i++) {
-      images[i].setAttribute("style", "filter: blur(20px) invert(" + invert + ");");
+    for (var i = 0; i < images.length; i++) {
+      if (invert) {
+        images[i].setAttribute('style', 'filter: blur(10px) invert(1);');
+      }
+      else {
+        images[i].setAttribute('style', 'filter: blur(10px);');
+      }
     }
   }
 }
