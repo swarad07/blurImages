@@ -11,9 +11,7 @@ function blurImages(master, invert, selectors) {
   if (master) {
     let images = [];
     // Check if we have selectors.
-    console.log(selectors.length);
     if (selectors.length !== 0) {
-      console.log('here1');
       var selectorClass = selectors.split(',');
       selectorClass.forEach(selector => {
         let imagesArray = document.querySelectorAll(selector);
@@ -22,10 +20,8 @@ function blurImages(master, invert, selectors) {
         });
       });
     } else {
-      console.log('here2');
       images = document.getElementsByTagName('img');
     }
-    console.log(images);
     for(var i = 0; i < images.length; i++) {
       images[i].setAttribute("style", "filter: blur(20px) invert(" + invert + ");");
     }
